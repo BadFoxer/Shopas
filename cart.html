@@ -6,14 +6,15 @@
 <link rel="stylesheet" type="text/css" href="stilius/content.css">
 <link rel="stylesheet" type="text/css" href="stilius/cart.css">
 <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
-<script src="js/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="js/productform.js"></script>
 <script src="js/showorder.js"></script>
 </head>
 
 <ul>
-  <li class="logo"><a href="#">LOGO</a></li>
-   <li ><a href="https://badfoxer.000webhostapp.com/index.html">Prekių katalogas</a></li>
+  <li class="logo"><a href="fox.html">Prekių katalogas</a></li>
+  <li ><a href="fox.html">Prekių katalogas</a></li>
+   <li ><a href="fox.html">Prekių katalogas</a></li>
   <li class="cart"><a href="cart.html">Krepšelis</a></li>
 </ul>
 
@@ -25,6 +26,7 @@
        	<th>Pavadinimas</th>
          <th>Kiekis</th>
          <th>Kaina</th>
+           <th>Delete</th>
       <tr ng-repeat="x in order">
        <td>
         <p>{{x.pavadinimas}}</p>
@@ -35,15 +37,16 @@
         <td>
        <p>{{ x.kaina }} €</p>
        </td>
+       <td><button class="myblue" id="{{x.id}}" ng-click="deleteData()">Delete</button></td>
        </tr>
-        <td>
-       </td>
          <td>
           <p>Mokėti</p>
        </td>
          <td>
        <p>{{bendra}} €</p>
        </td>
+         <td>
+       
 </div>
 </table>
 </div>
