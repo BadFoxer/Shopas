@@ -18,7 +18,7 @@ th {
 .myblue { 
   width: 100%;
   -webkit-transition:all .2s;
-  background: rgb(66, 184, 221); /* this is a light blue */
+  background: rgb(204, 0, 0); /* this is a light blue */
   height: 50px;
   text-align: center;
   font-weight: bold;
