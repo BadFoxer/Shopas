@@ -7,10 +7,27 @@ table {
 
 th, td {
     text-align: left;
-    padding: 20px;
+    padding: 30px;
 }
 
 th {
     background-color: #4CAF50;
     color: white;
+}
+
+.myblue { 
+  width: 100%;
+  -webkit-transition:all .2s;
+  background: rgb(66, 184, 221); /* this is a light blue */
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+
+
+}
+.myblue:hover{
+  background: #333;
+  color: white;
 }
