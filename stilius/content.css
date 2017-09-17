@@ -5,6 +5,12 @@ body {
    
 }
 
+input{
+
+  font-size: 18px;
+}
+
+
 .navbar {
   background-color: #333;
   position: fixed;
