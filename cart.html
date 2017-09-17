@@ -25,7 +25,6 @@
        	<th>Pavadinimas</th>
          <th>Kiekis</th>
          <th>Kaina</th>
-           <th>Delete</th>
       <tr ng-repeat="x in order">
        <td>
         <p>{{x.pavadinimas}}</p>
@@ -36,7 +35,7 @@
         <td>
        <p>{{ x.kaina }} €</p>
        </td>
-       <td><button class="myblue" id="{{x.id}}" ng-click="deleteData()" onClick="window.location.reload()">Delete</button></td>
+       <td><button class="myblue" id="{{x.id}}" ng-click="deleteData()" onClick="window.location.reload()">Išmesti</button></td>
        </tr>
         <td>
           <p class="move">Mokėti</p>
