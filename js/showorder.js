@@ -12,5 +12,14 @@
    }
  });
 }
-
+$scope.deleteData = function(){
+   this.id = event.target.id;
+   $http.post("base/delete.php",{'id':this.id})
+    .then(function(response) {
+     alert("prekė sėkmingai pašalinta");
+     
 });
+
+    }
+
+    });
