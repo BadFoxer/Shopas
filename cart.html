@@ -12,9 +12,8 @@
 </head>
 
 <ul>
-  <li class="logo"><a href="fox.html">Prekių katalogas</a></li>
-  <li ><a href="fox.html">Prekių katalogas</a></li>
-   <li ><a href="fox.html">Prekių katalogas</a></li>
+  <li class="logo"><a href="#">LOGO</a></li>
+  <li ><a href="https://badfoxer.000webhostapp.com">Prekių katalogas</a></li>
   <li class="cart"><a href="cart.html">Krepšelis</a></li>
 </ul>
 
@@ -37,7 +36,7 @@
         <td>
        <p>{{ x.kaina }} €</p>
        </td>
-       <td><button class="myblue" id="{{x.id}}" ng-click="deleteData()">Delete</button></td>
+       <td><button class="myblue" id="{{x.id}}" ng-click="deleteData()" onClick="window.location.reload()">Delete</button></td>
        </tr>
          <td>
           <p>Mokėti</p>
