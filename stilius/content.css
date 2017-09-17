@@ -1,0 +1,176 @@
+body {
+  
+    padding: 0;
+    margin: 0;
+   
+}
+
+.navbar {
+  background-color: #333;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  margin-left:auto; 
+  margin-right:auto;
+
+
+}
+
+
+
+
+table, td {    
+    border: 0px solid #ddd;
+    text-align: center;
+    width: 100px;
+    margin-top: 30px;
+   
+
+
+}
+
+table{
+    border-collapse: collapse;
+    width: 40%;
+    margin-left:auto; 
+    margin-right:auto;
+    margin-top: 0px;
+
+}
+
+td {
+    padding: 30px;
+    border-top-style: none;
+    border-bottom-style: none; 
+  }
+
+
+
+
+img {
+    width: 238px;
+    height: auto;
+    position: relative;
+    z-index: -1;
+
+}
+
+.myblue { 
+  width: 100%;
+  -webkit-transition:all .2s;
+  background: rgb(66, 184, 221); /* this is a light blue */
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+
+
+}
+.myblue:hover{
+  background: #333;
+  color: white;
+}
+
+.unit{
+  width: 50px;
+  position: relative;
+  left: 90px;
+  top: -74px;
+
+
+}
+
+.amount{
+ position: relative;
+top: -40px;
+font-size: 15px;
+font-family: 'Andada';
+z-index: -2;
+  letter-spacing: -0.8px;
+  
+
+}
+
+.pavadinimas{ 
+  font-size: 15px;
+  position: relative;
+  top: -50px;
+ font-family: 'Andada';
+ letter-spacing: -0.8px;
+
+    
+}
+
+.kaina{ 
+  font-size: 15px;
+  position: relative;
+  top: -50px;
+  font-family: 'Andada';
+   letter-spacing: -0.8px;
+ 
+
+
+
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #333;
+    height: 30px;
+
+
+  
+}
+
+li {
+    float: left;
+}
+
+.cart{
+
+  float: right;
+  margin-right: 40px;
+ 
+
+}
+
+.logo{
+
+  float: left;
+}
+
+li a {
+  color: white;
+  text-align: center;
+   font-family: 'Abril Fatface';
+  font-size: 20px;
+  margin: 30px;
+  text-decoration: none;
+
+
+
+}
+
+input{
+
+  position: relative;
+  top: -40px;
+
+}
+
+
+
+li a:hover {
+    color: #111;
+}
+
+
+@media only screen and (max-width: 2800px) {
+
+}
