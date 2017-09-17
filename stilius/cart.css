@@ -31,3 +31,12 @@ th {
   background: #333;
   color: white;
 }
+.move{
+  position: relative;
+  left: 245px;
+}
+
+.move2{
+  position: relative;
+  left: 245px;
+}
