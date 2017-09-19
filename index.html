@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="preke">
+<html data-ng-app="preke">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
@@ -13,88 +13,88 @@
 
 <ul class="navbar">
   <li class="logo"><a href="#">LOGO</a></li>
-   <li ><a href="index.html">Prekių katalogas</a></li>
+   <li ><a href="https://badfoxer.000webhostapp.com/index.html">Prekių katalogas</a></li>
   <li class="cart"><a href="cart.html">Krepšelis</a></li>
 </ul>
 
-<body  ng-controller="orderis" oncontextmenu="return false;">
+<body  data-ng-controller="orderis" oncontextmenu="return false;">
 
-<div ng-init="showimages(); showlist();">
+<div data-ng-init="showimages(); showlist();">
 
 </br></br></br></br></br></br>
 
 <table>
   <tr>
-    <td ng-repeat="x in images|limitTo : 6 : 0"><img ng-src="images/{{x.image}}"></td>
+    <td data-ng-repeat="x in images|limitTo : 6 : 0"><img data-ng-src="images/{{x.image}}"></td>
   </tr>
     <tr>
-    <td class="move" ng-repeat="x in list|limitTo : 6 : 0"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
-     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" ng-click="verify()"></td>
+    <td class="move" data-ng-repeat="x in list|limitTo : 6 : 0"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" data-ng-model="kiekis" min="1">
+     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" data-ng-click="verify($event)"></td>
   </tr>
    </table>
 
 
    <table>
   <tr >
-    <td ng-repeat="x in images|limitTo : 6 : 6"><img ng-src="images/{{x.image}}"></td>
+    <td data-ng-repeat="x in images|limitTo : 6 : 6"><img data-ng-src="images/{{x.image}}"></td>
   </tr>
     <tr>
-    <td class="move" ng-repeat="x in list|limitTo : 6 : 6"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
-     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" ng-click="verify()"></td>
+    <td class="move" data-ng-repeat="x in list|limitTo : 6 : 6"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
+     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" data-ng-click="verify($event)"></td>
   </tr>
    </table>
 
 
       <table>
   <tr >
-    <td ng-repeat="x in images|limitTo : 6 : 12"><img ng-src="images/{{x.image}}"></td>
+    <td data-ng-repeat="x in images|limitTo : 6 : 12"><img data-ng-src="images/{{x.image}}"></td>
   </tr>
     <tr>
-    <td class="move" ng-repeat="x in list|limitTo : 6 : 12"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
-     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" ng-click="verify()"></td>
+    <td class="move" data-ng-repeat="x in list|limitTo : 6 : 12"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
+     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" data-ng-click="verify($event)"></td>
   </tr>
    </table>
 
 
        <table>
   <tr >
-    <td ng-repeat="x in images|limitTo : 6 : 18"><img ng-src="images/{{x.image}}"></td>
+    <td data-ng-repeat="x in images|limitTo : 6 : 18"><img data-ng-src="images/{{x.image}}"></td>
   </tr>
     <tr>
-    <td class="move" ng-repeat="x in list|limitTo : 6 : 18"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
-     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" ng-click="verify()"></td>
+    <td class="move" data-ng-repeat="x in list|limitTo : 6 : 18"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
+     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" data-ng-click="verify($event)"></td>
   </tr>
    </table>
 
 
   <table>
   <tr>
-    <td ng-repeat="x in images|limitTo : 6 : 24"><img ng-src="images/{{x.image}}"></td>
+    <td data-ng-repeat="x in images|limitTo : 6 : 24"><img data-ng-src="images/{{x.image}}"></td>
   </tr>
     <tr>
-    <td class="move" ng-repeat="x in list|limitTo : 6 : 24"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
-     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" ng-click="verify()"></td>
+    <td class="move" data-ng-repeat="x in list|limitTo : 6 : 24"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
+     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" data-ng-click="verify($event)"></td>
   </tr>
    </table>
 
 
   <table>
   <tr>
-    <td ng-repeat="x in images|limitTo : 6 : 30"><img ng-src="images/{{x.image}}"></td>
+    <td data-ng-repeat="x in images|limitTo : 6 : 30"><img data-ng-src="images/{{x.image}}"></td>
   </tr>
     <tr>
-    <td class="move" ng-repeat="x in list|limitTo : 6 : 30"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
-     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" ng-click="verify()"></td>
+    <td class="move" data-ng-repeat="x in list|limitTo : 6 : 30"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
+     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" data-ng-click="verify($event)"></td>
   </tr>
    </table>
 
    <table>
   <tr>
-    <td ng-repeat="x in images|limitTo : 6 : 36"><img ng-src="images/{{x.image}}"></td>
+    <td data-ng-repeat="x in images|limitTo : 6 : 36"><img data-ng-src="images/{{x.image}}"></td>
   </tr>
     <tr>
-    <td class="move" ng-repeat="x in list|limitTo : 6 : 36"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
-     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" ng-click="verify()"></td>
+    <td class="move" data-ng-repeat="x in list|limitTo : 6 : 36"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
+     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" data-ng-click="verify($event)"></td>
   </tr>
    </table>
 
@@ -103,18 +103,18 @@
     <td ng-repeat="x in images|limitTo : 6 : 42"><img ng-src="images/{{x.image}}"></td>
   </tr>
     <tr>
-    <td class="move" ng-repeat="x in list|limitTo : 6 : 42"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
-     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" ng-click="verify()"></td>
+    <td class="move" data-ng-repeat="x in list|limitTo : 6 : 42"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
+     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" data-ng-click="verify($event)"></td>
   </tr>
    </table>
 
     <table>
   <tr>
-    <td ng-repeat="x in images|limitTo : 2 : 48"><img ng-src="images/{{x.image}}"></td>
+    <td data-ng-repeat="x in images|limitTo : 2 : 48"><img data-ng-src="images/{{x.image}}"></td>
   </tr>
     <tr>
-    <td class="move" ng-repeat="x in list|limitTo : 2 : 48"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
-     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" ng-click="verify()"></td>
+    <td class="move" data-ng-repeat="x in list|limitTo : 2 : 48"><p class="pavadinimas">{{x.pavadinimas}}</p><p class="kaina">{{x.kaina}} €</p><p class="amount">Kiekis:</p><input class="unit" type="number" ng-model="kiekis" min="1">
+     <input type="submit" value="Į krepšelį"  class="myblue" id="{{x.pavadinimas}}" name="{{ x.kaina }}" data-ng-click="verify($event)"></td>
   </tr>
    </table>
 
