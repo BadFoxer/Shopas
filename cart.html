@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="preke">
+<html data-ng-app="preke">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
@@ -13,20 +13,20 @@
 
 <ul class="navbar">
   <li class="logo"><a href="#">LOGO</a></li>
-   <li ><a href="index.html">Prekių katalogas</a></li>
+   <li ><a href="https://badfoxer.000webhostapp.com/index.html">Prekių katalogas</a></li>
   <li class="cart"><a href="cart.html">Krepšelis</a></li>
 </ul>
-  
+
 <body>
 
-<div ng-controller="showOrder" ng-init="showorder()" >
+<div data-ng-controller="showOrder" data-ng-init="showorder()" >
 </br></br></br></br></br></br></br></br>
 <table>
        	<th>Pavadinimas</th>
          <th>Kiekis</th>
          <th>Kaina</th>
-          <th></th>
-      <tr ng-repeat="x in order">
+        <th></th>
+      <tr data-ng-repeat="x in order">
        <td>
         <p>{{x.pavadinimas}}</p>
        </td>
@@ -36,9 +36,9 @@
         <td>
        <p>{{ x.kaina }} €</p>
        </td>
-       <td><button class="myblue" id="{{x.id}}" ng-click="deleteData()" onClick="window.location.reload()">Išmesti</button></td>
+  <td><button class="myblue" id="{{x.id}}" data-ng-click="deleteData($event)" onClick="window.location.reload()">Išmesti</button></td>
        </tr>
-        <td>
+           <td>
           <p class="move">Mokėti</p>
        </td>
          <td>
