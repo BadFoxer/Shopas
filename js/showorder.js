@@ -1,4 +1,4 @@
- app.controller('showOrder', function ($scope,$http,) {
+app.controller('showOrder', function ($scope,$http) {
  $scope.showorder = function(){
  	$scope.suma = 0;
    $http.get("base/getorder.php")
@@ -12,11 +12,12 @@
    }
  });
 }
-$scope.deleteData = function(){
+$scope.deleteData = function(event){
    this.id = event.target.id;
    $http.post("base/delete.php",{'id':this.id})
     .then(function(response) {
-     alert("prekė sėkmingai pašalinta");
+     //alert("prekė sėkmingai pašalinta");
+
      
 });
 
