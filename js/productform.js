@@ -1,8 +1,8 @@
 var app = angular.module('preke', []);
-app.controller('orderis', function ($scope,$http,) {
+app.controller('orderis', function ($scope,$http) {
 	$scope.kiekis = 1;
   
-	$scope.verify = function(){
+	$scope.verify = function(event){
     var retVal = confirm("Ar jūs tikrai norite užsisakyti?");
     if (retVal)
     {
@@ -29,7 +29,7 @@ app.controller('orderis', function ($scope,$http,) {
     }
 }
 
-   $scope.insert = function(){
+   /*$scope.insert = function(event){
     this.pavadinimasId = event.target.id;
     this.kainaName = event.target.name;
     this.total = this.kiekis * this.kainaName;
@@ -43,7 +43,7 @@ app.controller('orderis', function ($scope,$http,) {
    });
     
        
-  }
+  }*/
      
  
 
